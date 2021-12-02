@@ -2,29 +2,31 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+import { colors } from '../utils/styles';
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: colors.brandSecondary,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
+        margin: `0 5rem`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `1rem 1rem`,
       }}
     >
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: colors.brandMain,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          ≡ {siteTitle}
         </Link>
       </h1>
     </div>
